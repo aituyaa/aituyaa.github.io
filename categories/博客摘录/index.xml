@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客摘录 on Virgo</title>
+    <link>https://loveminimal.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%91%98%E5%BD%95/</link>
+    <description>Recent content in 博客摘录 on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 25 Jul 2022 14:03:39 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%91%98%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>冴羽写博客之深入系列</title>
+      <link>https://loveminimal.github.io/posts/deep-js/</link>
+      <pubDate>Mon, 25 Jul 2022 14:03:39 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/deep-js/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://github.com/mqyqingfeng/Blog&#34;&gt;冴羽写博客之深入系列&lt;/a&gt; ，写的很不错。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>当然我在扯淡</title>
+      <link>https://loveminimal.github.io/posts/yinwang/</link>
+      <pubDate>Wed, 03 Mar 2021 11:24:04 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/yinwang/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;我并不喜欢王垠这个人，甚至有些反感，但他的某些博文我很喜欢，也因此而受益，Hmm&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;*Tip. 非原文摘录，各别语句进行了删减和改动，建议看原文（点击章节标题）。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

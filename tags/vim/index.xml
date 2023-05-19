@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Virgo</title>
+    <link>https://loveminimal.github.io/tags/vim/</link>
+    <description>Recent content in Vim on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 Jul 2022 15:36:10 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode 插件 CVE Keymap 的开发记录</title>
+      <link>https://loveminimal.github.io/posts/cve-keymap/</link>
+      <pubDate>Wed, 06 Jul 2022 15:36:10 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/cve-keymap/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;当前博文以 &lt;code class=&#34;verbatim&#34;&gt;Org Mode&lt;/code&gt; 格式编辑。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have a vim, I have a emacs.&lt;br&gt;
+Eh~ vim-emacs!&lt;br&gt;
+I have a code, I have a vim-emacs.&lt;br&gt;
+Eh~ code-vim-emacs!&lt;br&gt;
+CVE!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>键位映射那些事儿</title>
+      <link>https://loveminimal.github.io/posts/editor-keybindings/</link>
+      <pubDate>Tue, 05 Jul 2022 17:53:29 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/editor-keybindings/</guid>
+      <description>&lt;p&gt;Vim 的键位不错，无论是移动光标还是进行编辑操作，但是如果是使用中文输入的话，就很尬 &amp;ndash; 中文状态下命令模式不能用，虽然通过一些方式可以使得在切换为非插入模式时自动切换为英文状态，但总是不那么尽如人意。&lt;/p&gt;
+&lt;p&gt;Emacs 的键位模式，就很适应中英文的混合输入，唯一的缺点就是有点费小手指。在 Emacs 中，我一般会启用 Evil 插件，如此，可以实现如果是只读文件和做一些删减工作的时候，就直接使用 Vim 的键位模式，而在插入模式下，就使用 Emacs 的键位模式，很不错，附上一份个人的 Evil 插件的配置 &lt;a href=&#34;https://github.com/loveminimal/emacs.d/blob/master/lisp/init-evil.el&#34;&gt;init-evil.el&lt;/a&gt; 。唯一不足的是，这种方式只有在 Emacs 中才是可用的，如果你使用其他编辑器时，就没有这份待遇了。不过，单纯的 Emacs 键位也足够好用了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://loveminimal.github.io/posts/vim/</link>
+      <pubDate>Mon, 04 Jul 2022 09:58:24 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/vim/</guid>
+      <description>&lt;p&gt;Vim 是 Vi 的升级版，一款功能强大、高度可定制的文本编辑器，它只有一个对手 &amp;ndash; Emacs 。那么，它来自哪里？&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

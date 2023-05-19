@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Virgo</title>
+    <link>https://loveminimal.github.io/tags/javascript/</link>
+    <description>Recent content in JavaScript on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 25 Jul 2022 14:03:39 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>冴羽写博客之深入系列</title>
+      <link>https://loveminimal.github.io/posts/deep-js/</link>
+      <pubDate>Mon, 25 Jul 2022 14:03:39 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/deep-js/</guid>
+      <description>&lt;p&gt;🔔 摘录自 &lt;a href=&#34;https://github.com/mqyqingfeng/Blog&#34;&gt;冴羽写博客之深入系列&lt;/a&gt; ，写的很不错。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>防抖与节流</title>
+      <link>https://loveminimal.github.io/posts/debounce-and-throttle/</link>
+      <pubDate>Thu, 21 Jul 2022 14:13:29 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/debounce-and-throttle/</guid>
+      <description>&lt;p&gt;为什么需要防抖和节流？它们是什么？有什么区别？适用场景是什么？&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

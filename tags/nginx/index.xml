@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on Virgo</title>
+    <link>https://loveminimal.github.io/tags/nginx/</link>
+    <description>Recent content in Nginx on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 16 Jul 2022 18:34:43 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx 重定向</title>
+      <link>https://loveminimal.github.io/posts/nginx-rewrite/</link>
+      <pubDate>Sat, 16 Jul 2022 18:34:43 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/nginx-rewrite/</guid>
+      <description>&lt;p&gt;博客系统迁移好多次了，多少次？详见 &lt;a href=&#34;../a-theme-making-journey&#34;&gt;一场“疲惫”的主题制作之旅&lt;/a&gt; 。域名啊、博客文章的层级结构啊，都难免存在差异。这就导致了一个问题，之前在别的网站发布的一些页面链接就成了“死链”。虽然，可以简单地重写向到 404 ，体验却不好，最好是可以重定向到变化后的页面。&lt;/p&gt;
+&lt;p&gt;周末无聊，简单实现了一下，做个记录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://loveminimal.github.io/posts/nginx/</link>
+      <pubDate>Fri, 23 Oct 2020 14:09:07 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/nginx/</guid>
+      <description>&lt;p&gt;在认识、学习 Nginx 之前，我们先来看一下代理是什么，如果你已经非常熟悉代理，可以直接跳到第二个章节。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

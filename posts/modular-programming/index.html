@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="模块化编程 - https://loveminimal.github.io/posts/modular-programming/">
+    <meta name="author" content="Jack - https://loveminimal.github.io/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>模块化编程</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://loveminimal.github.io/style.min.588bdbe244863f48f211eae6ac79640e39689f34e9568c6f2789c5519ab60956.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate ">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": false
+	}
+</div>
+    <h1 class="title">
+        
+            模块化编程
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2020-12-11&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-05-08&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            5917 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            12 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/javascript">JavaScript</a>
+			
+		</div>
+		<div class="tag">
+			
+			
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://loveminimal.github.io/posts/yinwang/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://loveminimal.github.io/posts/virtual-dom/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#javascript-的模块化-1">JavaScript 的模块化 <a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html">1</a></a>
+      <ul>
+        <li><a href="#原始划分">原始划分</a></li>
+        <li><a href="#对象划分">对象划分</a></li>
+        <li><a href="#立即执行函数划分">立即执行函数划分</a></li>
+        <li><a href="#模块依赖">模块依赖</a></li>
+      </ul>
+    </li>
+    <li><a href="#commonjs2">CommonJS<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023027697415616">2</a></a>
+      <ul>
+        <li><a href="#commonjs-模块原理">CommonJS 模块原理</a></li>
+        <li><a href="#moduleexports-vs-exports">module.exports VS exports</a></li>
+      </ul>
+    </li>
+    <li><a href="#es-module3">ES Module<a href="https://es6.ruanyifeng.com/#docs/module">3</a></a>
+      <ul>
+        <li><a href="#es-module-vs-commonjs">ES Module VS CommonJS</a></li>
+        <li><a href="#export">export</a></li>
+        <li><a href="#import">import</a></li>
+        <li><a href="#export-default">export default</a></li>
+        <li><a href="#export-与-import-的复合写法">export 与 import 的复合写法</a></li>
+        <li><a href="#import-1">import()</a></li>
+      </ul>
+    </li>
+    <li><a href="#webpack-module4">Webpack Module<a href="https://www.webpackjs.com/concepts/modules/">4</a></a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>i.e. Modular Programming</p>
+<blockquote>
+<p>每一个领域的内容，都要有先问一下 &ndash; 是什么？为什么？做什么？怎么做？</p>
+<ul>
+<li>是什么？简述概念；</li>
+<li>为什么？历史发展，出现的原因，优缺点；</li>
+<li>做什么？主要应用场景；</li>
+<li>怎么做？具体使用方法步骤。</li>
+</ul>
+</blockquote>
+<h2 id="简介">简介</h2>
+<p><strong>模块化编程</strong> （模块化程序设计），是指在进行程序设计时将一个大程序按照功能划分为若干小程序模块，每个小程序模块完成一个确定的功能，并在这些模块之间建立必要的联系，通过模块的互相协作完成整个功能的程序设计方法。</p>
+<blockquote>
+<p>= 大程序 → （功能）小程序模块（ → 子过程） → 模块联系、协作</p>
+</blockquote>
+<p>随着程序规模的扩大，无论是项目本身（编写、扩展、测试、维护），还是经济上的考虑（效率、收支），分工协作都是不可避免的。</p>
+<p>在模块化的过程中可能会产生什么问题呢？ <strong>命名冲突</strong>，本质在于作用域。</p>
+<blockquote>
+<p>= 实际项目中，模块化开发几乎不会是一个人开发所有模块，那就很难避免命名冲突（小甲和小乙都使用了同一个变量名、函数名），项目越大，越难控制。*</p>
+</blockquote>
+<p>下面我们就以 JavaScript 为例来看一下其模块化的发展。</p>
+<blockquote>
+<p>= 为什么选用 JavaScript 呢？因为 JavaScript 最初的设计是没有模块化考虑的，而是随着其应用场景和范围的变化，逐渐通过各种方式实现了模块化，如此，我们可以看一下其模块化的全貌和历程。*</p>
+</blockquote>
+<h2 id="javascript-的模块化-1">JavaScript 的模块化 <a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html">1</a></h2>
+<p>1991 年 8 月 6 日 （农历六月廿六），世界上第一个网页诞生。世界上的第一个网页是这样的 <a href="http://info.cern.ch/">http://info.cern.ch/</a> ，只用来作为文本的展示和极其简单的交互。</p>
+<img src="imgs/mp-1.jpg" />
+<p><code>&gt; 万维网的发明者，互联网之父蒂姆·伯纳斯·李</code></p>
+<p>检查一下网页源码的话，你会发现，它只是纯 HTML 文本，没有 CSS ，更没有 JavaScript 。</p>
+<blockquote>
+<p>= 哈坤·利于 1994 年在芝加哥的一次会议上第一次展示了 CSS 的建议；JavaScript 是 1995 年由 Netscape 公司的 Brendan Eich，在网景导航者浏览器上首次设计实现而成。*</p>
+</blockquote>
+<p>随着网页越来越像桌面程序，需要一个团队分工协作、进度管理、单元测试等等……开发者不得不使用软件工程的方法，管理网页的业务逻辑。JavaScript 的模块化编程，已经成为一个迫切的需求。</p>
+<p>前面我们已经知道，JavaScript 最初设计的时候就没有考虑到模块化，那么我们要怎么实现它的模块化呢？</p>
+<p>模块化编程是将一个大程序按照功能划分为若干小程序模块，那么，我们我们首先要解决的就是 <strong>划分模块</strong> 。</p>
+<h3 id="原始划分">原始划分</h3>
+<p>我们可以认为模块就是实现特定功能的一组方法（以及记录状态），只要把不同函数简单地放在一起，就算是一个模块。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 这就是一个模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> m1() {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> m2() {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ...
+</span></span></span></code></pre></div><p>上面的代码中，函数 <code>m1()</code> 和 <code>m2()</code> ，组成一个模块，使用的时候，直接调用就行了。这样做有以下缺点：</p>
+<pre tabindex="0"><code>- 污染了全局变量，无法保证不与其他模块发生变量名冲突；
+- 模块成员之间看不出直接关系。
+</code></pre><blockquote>
+<p>= 看，模块化其实就是相反的两个方面： ‘拆分’（隔离、解决冲突）和‘组合’（依赖、导出引入）。*</p>
+</blockquote>
+<h3 id="对象划分">对象划分</h3>
+<p>为了解决上面的缺点，可以把模块写成一个对象，所有的模块成员都放到这个对象里面。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> module1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> <span style="color:#0086b3">Object</span>({
+</span></span><span style="display:flex;"><span>    _count<span style="color:#000;font-weight:bold">:</span> <span style="color:#099">0</span>,
+</span></span><span style="display:flex;"><span>    m1<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    m2<span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>上边的函数 <code>m1()</code> 和 <code>m2()</code> ，都封装在 <code>module1</code> 对象里（现在它们有关系了，都属于一个对象嘛），使用的时候，就是调用这个对象的属性，如 <code>module1.m1()</code> 。但是，这样的写法会暴露所有模块成员，内部状态可以被外部改写，如 <code>module1._count = 5</code> 。</p>
+<blockquote>
+<p>= 很显然，这样的封装是不安全的。*</p>
+</blockquote>
+<h3 id="立即执行函数划分">立即执行函数划分</h3>
+<p>如何不暴露私有成员的目的，自然是做到外界不能直接访问原始对象内部，只能访问我们想让他访问的对象。使用“立即执行函数（Immediately-Invoked Function Expression, IIFE）”，可以砍到不暴露私有成员的目的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> module1 <span style="color:#000;font-weight:bold">=</span> (<span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> _count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> m1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">var</span> m2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#998;font-style:italic">/* ... */</span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 这个就是我们想让外界访问到的对象了
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">return</span> {
+</span></span><span style="display:flex;"><span>        m1<span style="color:#000;font-weight:bold">:</span> m1,
+</span></span><span style="display:flex;"><span>        m2<span style="color:#000;font-weight:bold">:</span> m2,
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></div><p>如此，在 <code>{ m1: m1, m2: m2 }</code> 中根本没有 <code>_count</code> 变量，外界自然是访问不到的喽。</p>
+<p>至此，我们解决了 JavaScript 中如何模块化的问题 &ndash; 使用 IIFE 来实现模块分离（避免命名冲突、封装不够等问题）。</p>
+<h3 id="模块依赖">模块依赖</h3>
+<p>我们在前面已经讲述了 <strong>如何分离模块的问题</strong> ，那么，另一个问题也就随之而来了 &ndash; 假如在一个程序中，模块 A 调用了 B ，B 又调用了 C、D ，我们如何处理 <strong>模块之间的依赖关系</strong> 呢？</p>
+<p>什么是依赖？聚焦在模块本身无非就是两点：</p>
+<ol>
+<li>如何导入一个模块？</li>
+<li>如何导出模块中你想暴露的？</li>
+</ol>
+<p>我们来了解一下比较成熟的模块实现方式，如 CommonJS、AMD、CMD、UMD 和 ES Module 等。后续的章节中，我们重点来认识一下 CommonJS 和 ES Module 两种模块规范，其他在实际项目中已经应用不多。</p>
+<h2 id="commonjs2">CommonJS<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023027697415616">2</a></h2>
+<p>在 Node 环境中，一个 <code>.js</code> 文件就称之为一个模块（module），它们遵循 CommonJS 模块规范。</p>
+<p>我们来看一个具体的例子，假如我们遵循 CommonJS 规范编写 <code>hello.js</code> 文件，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// hello.js 文件就是名为 hello 的模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Hello&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">function</span> greet(name) {
+</span></span><span style="display:flex;"><span>    console.log(s <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 导出模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 把函数 greet 作为模块的输出暴露出去
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>module.exports <span style="color:#000;font-weight:bold">=</span> greet;
+</span></span></code></pre></div><p>在同一目录下，再来编写 <code>main.js</code> 文件，来调用 <code>hello</code> 模块的 <code>greet</code> 函数，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 引入模块
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 使用 Node 提供的 `require` 函数引入模块 `hello`
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> greet <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#39;./hello&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> s <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Michael&#39;</span>;
+</span></span><span style="display:flex;"><span>greet(s); <span style="color:#998;font-style:italic">// → Hello, Michael!
+</span></span></span></code></pre></div><p>综上可知，CommonJS 规范，使用</p>
+<ul>
+<li><code>module.exports</code> 暴露模块，如 <code>module.exports = variable</code> ，其中 <code>variable</code> 可以是任意对象、函数、数组等；</li>
+<li><code>require</code> 函数导入模块，如 <code>var ref = require('module_name)</code> ，引入的对象具体是什么，取决于所引入模块输出的对象。</li>
+</ul>
+<blockquote>
+<p>= ‘输出’ 决定 ‘引入’！*</p>
+</blockquote>
+<h3 id="commonjs-模块原理">CommonJS 模块原理</h3>
+<p>我们知道，JavaScript 语言本身并没有一种模块机制来保证不同模块可以使用相同的变量名。</p>
+<p><strong>那么，NodeJS 是如何实现这一点的呢？</strong></p>
+<p><em>_1. 模块隔离</em></p>
+<p>其实要实现“模块”这个功能，并不需要语法层面的支持，NodeJS 也没有增加任何新的 JavaScript 语法。实现“模块”功能的奥妙就在于 JavaScript 是一种函数式编程语言， <strong>它运行闭包！闭包！闭包！</strong> ，如我们上面说到是 IIFE 。我们只需要把一段 JavaScript 代码用一个函数包装起来，这段代码的所有“全局”变量就变成了函数内部的局部变量。</p>
+<blockquote>
+<p>= 看，我们使用函数的作用域作了隔离，如此，就避免了不同模块内部变量、函数名的命名冲突。*</p>
+</blockquote>
+<pre tabindex="0"><code class="language-__思考：闭包为什么可以做作用域隔离呢？" data-lang="__思考：闭包为什么可以做作用域隔离呢？">答案：内存机制决定的。看，内存才是最本质的。
+</code></pre><p>下面，我们来看看 NodeJS 具体为我们做了什么？</p>
+<p>我们编写的 <code>hello.js</code> 代码是这样的：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;world&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#d14">&#39;Hello, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span></code></pre></div><p>NodeJS 加载了 <code>hello.js</code> 之后，把代码包装了一下，变成了这样执行 ↓ ：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>(<span style="color:#000;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 读取 hello.js 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">var</span> name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;world&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#d14">&#39;Hello, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// hello.js 代码读取结束
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>})();
+</span></span></code></pre></div><p>如此， <code>name</code> 就变成了函数内部的局部变量，如果 NodeJS 继续加载其他模块，这些模块中定义的 <code>name</code> 也互不干扰。</p>
+<p><em>_2. 模块输出</em></p>
+<p>NodeJS 利用 JavaScript 的函数式编程特性 &ndash; 闭包，轻松实现了模块的隔离。</p>
+<p><strong>但是，模块的输出 <code>module.exports</code> 是怎么实现的呢？</strong></p>
+<p>这个也容易，原来 NodeJS 先准备了一个对象 <code>module</code> ，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// NodeJS 准备一个 module 对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> module <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>    id<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;hello&#39;</span>,
+</span></span><span style="display:flex;"><span>    exports<span style="color:#000;font-weight:bold">:</span> {},
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> load <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (module) {
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// 读取的 hello.js 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>    <span style="color:#000;font-weight:bold">function</span> greet(name) {
+</span></span><span style="display:flex;"><span>        console.log(<span style="color:#d14">&#39;Hello, &#39;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;!&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    module.exports <span style="color:#000;font-weight:bold">=</span> greet;
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic">// hello.js 代码读取结束
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> module.exports;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> exported <span style="color:#000;font-weight:bold">=</span> load(module);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 保存 module
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>save(module, exported);
+</span></span></code></pre></div><p>可见，变量 <code>module</code> 是 NodeJS 在加载 <code>.js</code> 文件之前准备的一个变量，并将其传入加载函数，我们在 <code>hello.js</code> 中可以直接使用变量 <code>module</code> 原因就在于它实际上是加载函数的一个参数。</p>
+<p>通过把参数 <code>module</code> 传递给 <code>load()</code> 函数， <code>hello.js</code> 就顺利地把一个变量传递给了 Node 执行环境，Node 会把 <code>module</code> 变量保存到某个地方。</p>
+<p>由于 Node 保存了所有导入的 <code>module</code> ，当我们用 <code>require()</code> 获取模块时，Node 找到对应的 <code>module</code> ，把这个 <code>module</code> 的 <code>exports</code> 属性返回，如此，另一个模块就拿到了模块的输出。</p>
+<blockquote>
+<p>= 通俗来说，就是 Node 加载模块时，在其可访问的环境（作用域）内挂载了一个 <code>module</code> 对象，如此该模块输出的 ‘对象’（变量、函数、对象等） 就可以赋给 <code>module</code> 对象的 <code>exports</code> 属性（即 <code>module.exports</code>）。*</p>
+</blockquote>
+<h3 id="moduleexports-vs-exports">module.exports VS exports</h3>
+<p>我们只需要知道， <code>module.exports</code> 是 NodeJS 为我们准备的用于模块输入的唯一真正的对象， <code>exports</code> 不过是对 <code>module.exports</code> 的引用罢了。这也就决定了，如下使用方式的对错：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>module.exports <span style="color:#000;font-weight:bold">=</span> { desc<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;一个引用类型对象&#39;</span> }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>module.exports.var1 <span style="color:#000;font-weight:bold">=</span> variable; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>exports.var1 <span style="color:#000;font-weight:bold">=</span> variable; <span style="color:#998;font-style:italic">// ✔ 并有改变 `exports` 的引用
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>exports <span style="color:#000;font-weight:bold">=</span> { desc<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;一个引用类型对象&#39;</span> }; <span style="color:#998;font-style:italic">// ✘ 已改变了 `exports` 的引用
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 你改变了 `exports` 的指向，它就不再指向 `module.exports` 了，
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 自然也就不是模块的输出对象了，
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 记住，模块的输出对象只有一个
+</span></span></span></code></pre></div><p>*<strong>注：强烈建议只使用 <code>module.exports</code> 方式来输出模块变量！</strong></p>
+<h2 id="es-module3">ES Module<a href="https://es6.ruanyifeng.com/#docs/module">3</a></h2>
+<p>在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS（Node 服务器端） 和 AMD （浏览器端）两种。</p>
+<p>有一个好消息，ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。</p>
+<h3 id="es-module-vs-commonjs">ES Module VS CommonJS</h3>
+<p>ES Module 模块的设计思想是尽量的 <strong>静态化</strong> ，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东东。比如，CommonJS 模块输出的就是 <code>module.exports</code> 对象，输入时必须查找对象属性。</p>
+<blockquote>
+<p>= 有了 ES6 静态加载，使得静态分析成为可能，就能进一步拓宽 JavaScript 的语法，比如引入宏（macro）和类型系统（type system）。*</p>
+</blockquote>
+<pre tabindex="0"><code>❓ 想一想，为什么 CommonJS 和 AMD 只有在运行时才能确定模块的依赖关系及输入输出变量呢？
+
+✔️ 因为它们本质上都是“立即执行函数”（IIFE），不执行自然无法得到！
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> { stat, exists, readfile } <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#39;fs&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">let</span> _fs <span style="color:#000;font-weight:bold">=</span> require(<span style="color:#d14">&#39;fs&#39;</span>); <span style="color:#998;font-style:italic">// 引入了整个 `fs` 模块的整个输出对象
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">let</span> stat <span style="color:#000;font-weight:bold">=</span> _fs.stat;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> exists <span style="color:#000;font-weight:bold">=</span> _fs.exists;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">let</span> readfile <span style="color:#000;font-weight:bold">=</span> _fs.readfile;
+</span></span></code></pre></div><p>上面代码的实质是整体加载 <code>fs</code> 模块（即加载 <code>fs</code> 模块的整个输出对象 <code>module.exports</code> ），生成一个对象 <code>_fs</code> ，然后再从这个对象上读取 3 个方法。</p>
+<p>这种加载称为 <strong>运行时加载</strong> ，因为只有运行时才能得到这个对象，导致完全没办法在编译时做“静态优化”。</p>
+<blockquote>
+<p>= 所谓“静态化”，没那么玄乎，不过就是在运行之前，编译阶段就可以确定的一些东东。*</p>
+</blockquote>
+<p>与 CommonJS 模块输出的是 <code>module.exports</code> 对象不同的时，ES Module 模块输出的并不是对象，而是 <strong>通过 <code>export</code> 命令显式指定输出的代码，再通过 <code>import</code> 命令输入</strong> 。如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ES Module
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { stat, exists, readFile } from <span style="color:#d14">&#39;fs&#39;</span>;
+</span></span></code></pre></div><p>其实质是从 <code>fs</code> 模块加载 3 个方法， <strong>其他方法不加载</strong> ，即它无法引用 ES Module 模块本身（因为它不是对象），这种加载称为 <strong>编译时加载</strong> （或静态加载）。</p>
+<h3 id="export">export</h3>
+<p>ES Module 模块功能主要由两个命令构成： <code>export</code> 和 <code>import</code> ：</p>
+<ul>
+<li><code>export</code> 命令用于规定模块的对外接口；</li>
+<li><code>import</code> 命令用于输入其他模块提供的功能。</li>
+</ul>
+<p><code>export、import</code> 命令可以出现在模块的任何位置，只要处于模块顶层就可以，因为处在代码块中，就没法做静态优化了。</p>
+<p>*<strong>注： <code>export</code> 命令显式指定输出的代码，对，是代码！代码！代码！</strong></p>
+<blockquote>
+<p>= 其实，看一下基本的编译原理，就很容易理解这个地方了，<code>export</code> 输出的其实是一个动态外链。*</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">var</span> year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1990</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// or
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">var</span> year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1990</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { year }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 还可以用别名输出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { year as yearAlias1 }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { year as yearAlias2 }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span></code></pre></div><p>如上， <code>export</code> 导出的都是 <code>var year = 1990</code> 这行代码，而不是 <code>year</code> 这个变量。</p>
+<p>如果，你像在下面这样使用，就会报错了，如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#099">1</span>                        <span style="color:#998;font-style:italic">// ✘
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> m <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> m                        <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></div><p>想一下，为会什么会报错呢？因为它们 <strong>不是有意义的代码</strong> 呗！ <code>1</code> 只是一个字面量，引用它明显没有什么意义，同样 <code>m</code> 中存的也是 <code>1</code> 。</p>
+<p>同理，对于函数而言，也是一样的，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">function</span> f() {}          <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// or
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> f() {}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { f }                    <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { f as fn }              <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> f                        <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></div><p><strong><code>export</code> 语句输出的接口，与其对应的值是动态绑定关系。</strong> 即通过该接口，可以取到模块内部实时的值。这一点与 CommonJS 规范完全不同，CommonJS 模块输出的是值的缓存，不存在动态更新。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">var</span> foo <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;bar&#39;</span>;
+</span></span><span style="display:flex;"><span>setTimeout(() =&gt; (foo <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;baz&#39;</span>), <span style="color:#099">500</span>);
+</span></span></code></pre></div><p>上面代码输出变量 <code>foo</code> ，值为 <code>bar</code> ，500 毫秒后变成 <code>baz</code> 。</p>
+<h3 id="import">import</h3>
+<p>前面我们讲了输出 <code>export</code> ，这个章节我们来认识一下输入 <code>import</code> 。</p>
+<p><code>import</code> 命令接受一对大括号，里面指定要从其他模块导入的变量名，该变量名必须与被导入模块对象接口（输出的大括号是的变量啦）名称相同。其用法实例如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> { year } from <span style="color:#d14">&#39;./profile.js&#39;</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { year as yearAlias } from <span style="color:#d14">&#39;./profile.js&#39;</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#d14">&#39;loadsh&#39;</span>; <span style="color:#998;font-style:italic">// ✔ 只是执行 loadsh 模块，不输入任何值
+</span></span></span></code></pre></div><p>除了指定加载某个输出值，还可以使用 <strong>整体加载</strong> ，即用星号（ <code>*</code> ）指定一个对象，所有输出值都加载在这个对象上面。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#000;font-weight:bold">*</span> as circle from <span style="color:#d14">&#39;./circle&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>circle.area(<span style="color:#099">4</span>); <span style="color:#998;font-style:italic">// 调用 circle 的 area() 方法计算面积
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>circle.circumference(<span style="color:#099">14</span>); <span style="color:#998;font-style:italic">// 调用 circle 的 circumference() 方法计算周长
+</span></span></span></code></pre></div><h3 id="export-default">export default</h3>
+<p>前面说过，使用 <code>import</code> 命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载。为了给用户提供方便，让他们不用阅读文档就能加载模块，就要用到 <code>export default</code> 命令，为模块指定默认输出。</p>
+<p>*注： 使用 <code>export default</code> 输出的代码，用 <code>import</code> 命令引入时，不使用大括号。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export-default.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 匿名函数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> <span style="color:#000;font-weight:bold">function</span>() {}      <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 具名函数
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> <span style="color:#000;font-weight:bold">function</span> foo() {}  <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// or
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> foo() {}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> foo                <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import-default.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> baz from <span style="color:#d14">&#39;./exort-default&#39;</span> <span style="color:#998;font-style:italic">// ✔ `baz` 可以是任何自定义的变量名
+</span></span></span></code></pre></div><p>但是，对于使用 <code>export</code> 命令时，就不能省略大括号，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">function</span> foo() {}          <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> foo() {}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { foo }                    <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { foo } from <span style="color:#d14">&#39;./export.js&#39;</span> <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> foo form <span style="color:#d14">&#39;./export.js&#39;</span>     <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></div><p><strong>本质上， <code>export default</code> 就是输出一个叫做 <code>default</code> 的变量或方法，然后系统允许你为它取任意名字。</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">function</span> add(x, y) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">+</span> y;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { add as <span style="color:#000;font-weight:bold">default</span> }; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// export default add           // ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import.js ///
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { <span style="color:#000;font-weight:bold">default</span> as foo } from <span style="color:#d14">&#39;./export.js&#39;</span>; <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// import foo from &#39;./export.js&#39;             // ✔
+</span></span></span></code></pre></div><p>同样，因为 <code>export default</code> 命令其实只是输出一个叫做 <code>default</code> 的变量，所以它后面不能跟变量声明语句。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">var</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>                <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">var</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> a                <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> <span style="color:#000;font-weight:bold">var</span> a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>        <span style="color:#998;font-style:italic">// ✘
+</span></span></span></code></pre></div><h3 id="export-与-import-的复合写法">export 与 import 的复合写法</h3>
+<p>如果在一个模块之中，先输入后输出同一个模块， <code>import</code> 语句可以与 <code>export</code> 语句写在一起。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { foo, bar } from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等价于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { foo, bar } from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> { foo, bar };
+</span></span></code></pre></div><p>上面代码中， <code>export</code> 和 <code>import</code> 语句可以结合在一起，写成一行。</p>
+<p>但需要注意的是，写成一行以后， <code>foo</code> 和 <code>bar</code> 实际上 <strong>并没有被导入当前模块，只是相当于对外转发</strong> 了这两个接口，导致当前模块不能直接使用 <code>foo</code> 和 <code>bar</code> 。</p>
+<p>模块的接口改名和整体输出，也可以采用这种写法。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 接口改名
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { foo as myFoo } from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 整体输出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">*</span> from <span style="color:#d14">&#39;my_module&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">*</span> as ns from <span style="color:#d14">&#34;mod&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 默认接口的写法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { <span style="color:#000;font-weight:bold">default</span> } from <span style="color:#d14">&#39;foo&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 具名接口改为默认接口的写法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { es6 as <span style="color:#000;font-weight:bold">default</span> } from <span style="color:#d14">&#39;./someModule&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">import</span> { es6 } from <span style="color:#d14">&#39;./someModule&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">export</span> <span style="color:#000;font-weight:bold">default</span> es6;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 默认接口也可以改名为具名接口
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">export</span> { <span style="color:#000;font-weight:bold">default</span> as es6 } from <span style="color:#d14">&#39;./someModule&#39;</span>;
+</span></span></code></pre></div><h3 id="import-1">import()</h3>
+<p>前面介绍过， <code>import</code> 命令会被 JavaScript 引擎静态分析，先于模块内的其他语句执行。</p>
+<p>这样的设计，固然有利于编译器提高效率，但也导致无法在运行时加载。在语法上，条件加载就不可能实现。如果 <code>import</code> 命令要取代 Node 的 <code>require</code> 方法，就形成了一个障碍。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 报错
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">if</span> (x <span style="color:#000;font-weight:bold">===</span> <span style="color:#099">2</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">import</span> MyModule from <span style="color:#d14">&#39;./myModule&#39;</span>; <span style="color:#998;font-style:italic">// ✘ `import` 命令不支持动态加载
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></div><p>ES2020 提案引入了 <code>import()</code> 函数，支持动态加载模块。</p>
+<pre tabindex="0"><code>import(specifier)               // `specifier` 指定所要加载的模块的位置
+</code></pre><p><code>import()</code> 函数和 <code>import</code> 命令接受的参数相同，区别在于 <code>import()</code> 可以动态加载，且与所加载的模块并没有静态链接关系， <strong>返回一个 Promise 对象</strong> 。</p>
+<p><code>import()</code> 函数类似于 Node 的 <code>require</code> 方法，区别在于 <code>import()</code> 是异步加载，而 <code>require</code> 是同步加载。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> (condition) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">import</span>(<span style="color:#d14">&#39;moduleA&#39;</span>).then(<span style="color:#998;font-style:italic">/* ... */</span>); <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>} <span style="color:#000;font-weight:bold">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">import</span>(<span style="color:#d14">&#39;moduleB&#39;</span>).then(<span style="color:#998;font-style:italic">/* ... */</span>); <span style="color:#998;font-style:italic">// ✔
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>}
+</span></span></code></pre></div><p>*注： <code>import()</code> 加载模块成功以后，这个模块会作为一个对象，当作 <code>then</code> 方法的参数。</p>
+<h2 id="webpack-module4">Webpack Module<a href="https://www.webpackjs.com/concepts/modules/">4</a></h2>
+<p>在模块化编程中，开发者将程序分解成离散功能块（Discrete Chunks of Funtionality），并称之为模块。</p>
+<p>每个模块具有比完整程序更小的接触面，使得校验、调试、测试轻而易举。精心编写的模块提供了可靠的抽象和封装界限，使得应用程序中每个模块都具有条理清楚的设计和明确的目的。</p>
+<p>NodeJS 从一开始就支持模块化编程，而 Web 浏览器对于模块化的支持却姗姗来迟。在 Web 存在多种支持 JavaScript 模块化的工具，如 AMD、CMD 等，这些工具各有优势和限制。</p>
+<p>Webpack 基于从这些系统获得的经验教训，并将模块的概念应用于项目中的任何文件。</p>
+<p><strong>什么是 Webpack 模块呢？</strong></p>
+<p>Webpack 模块能够以各种方式表达模块之间的依赖关系，如：</p>
+<ul>
+<li>ES2015 的 <code>import</code> 语句；</li>
+<li>CommonJS 的 <code>require()</code> 语句；</li>
+<li>AMD 的 <code>define</code> 和 <code>require</code> 语句；</li>
+<li>CSS/SASS/LESS 文件中的 <code>@import</code> 语句；</li>
+<li>样式 <code>url(...)</code> 或 HTML 文件 <code>&lt;img src=...&gt;</code> 中的图片链接。</li>
+</ul>
+<p><em>Webpack 是怎么做到这一点的呢？</em> loader ！</p>
+<p>Webpack 通过 loader 可以支持各种语言和预处理器编写模块。loader 描述了 webpack 如何处理非 JavaScript 的模块，并且在 bundle 中引入这些依赖。另外，webpack 社区已经为各种就行语言和语言处理器构建了 loader ，如： CoffeeScript、TypeScript、ESNext(Babel)、Sass、Less 等。</p>
+<p>*注：有关完整列表，请参考 <a href="https://www.webpackjs.com/loaders">loader 列表</a> 或 <a href="https://www.webpackjs.com/api/loaders">自己编写</a> 。</p>
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://loveminimal.github.io/posts/yinwang/">← 当然我在扯淡</a></div>
+    <div><a href="https://loveminimal.github.io/posts/virtual-dom/">Virtual Dom  →</a></div>
+</div>
+    
+    <div class="container-comment">
+	<script src="https://utteranc.es/client.js"
+        repo="loveminimal/comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+	</script>
+</div>
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        豫ICP备2022002918号-1
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search on Virgo</title>
+    <link>https://loveminimal.github.io/tags/search/</link>
+    <description>Recent content in Search on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jun 2022 15:43:26 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一种简单的 Hugo 本地搜索实现</title>
+      <link>https://loveminimal.github.io/posts/hugo-local-search/</link>
+      <pubDate>Thu, 23 Jun 2022 15:43:26 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/hugo-local-search/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;🚨 后又陆陆续续加了些辅助功能，可以点击下载最新完整的&lt;a href=&#34;https://ovirgo.com/js/search.js&#34;&gt;search.js&lt;/a&gt; 源码（另存后使用编辑器打开就不中文乱码了）。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

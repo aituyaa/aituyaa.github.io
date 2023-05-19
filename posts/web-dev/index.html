@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Web 开发 - https://loveminimal.github.io/posts/web-dev/">
+    <meta name="author" content="Jack - https://loveminimal.github.io/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Web 开发</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://loveminimal.github.io/style.min.588bdbe244863f48f211eae6ac79640e39689f34e9568c6f2789c5519ab60956.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate ">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": false
+	}
+</div>
+    <h1 class="title">
+        
+            Web 开发
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2022-01-26&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-05-08&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            5093 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            11 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/java">Java</a>
+			
+		</div>
+		<div class="tag">
+			
+			
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://loveminimal.github.io/posts/mvx/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://loveminimal.github.io/posts/spring/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javaee">JavaEE</a></li>
+    <li><a href="#http-server">HTTP Server</a></li>
+    <li><a href="#servlet">Servlet</a></li>
+    <li><a href="#jsp">JSP</a></li>
+    <li><a href="#mvc">MVC</a></li>
+    <li><a href="#spring-mvc">Spring MVC</a></li>
+    <li><a href="#rest">REST</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>开个坑，大点的……</p>
+<p>🔔 摘录自 <a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1255945497738400">廖雪峰老师的 Java 教程</a></p>
+<h2 id="javaee">JavaEE</h2>
+<img src="imgs/1.png" style="float: right; margin-left: 8px; " />
+<p>JavaEE 并不是一个软件产品，它更多的是一种软件架构和设计思想，是在 JavaSE 的基础上，开发的一系列基于服务器的组件、API 标准和通用架构。</p>
+<p><strong>JavaEE 最核心的组件就是基于 Servlet 标准的 Web 服务器</strong> ，开发者编写的应用程序是基于 Servlet API 并运行在 Web 服务器内部的。</p>
+<p>目前流行的基于 Spring 的轻量级 JavaEE 开发架构，使用最广泛的是 Servlet 和 JMS（Java Message Service），以及一系列开源组件。</p>
+<h2 id="http-server">HTTP Server</h2>
+<p>Web 应用是 BS（Browser/Server）架构的，浏览器和服务器之间的传输协议是 HTTP。HTTP 协议是一个基于 TCP 协议之上的“请求-响应”协议。</p>
+<p><strong>一个 HTTP Server 本质上是一个 TCP 服务器。</strong> 具体实现可以参考 <a href="https://gitee.com/liaoxuefeng/learn-java/blob/master/practices/Java%25E6%2595%2599%25E7%25A8%258B/200.Web%25E5%25BC%2580%25E5%258F%2591.1255945497738400/10.Web%25E5%259F%25BA%25E7%25A1%2580.1304265903570978/web-http-server.zip?utm_source=blog_lxf">编写一个简单的 HTTP 服务器</a> 。</p>
+<h2 id="servlet">Servlet</h2>
+<img src="imgs/2.png" style="float: right; margin-left: 8px; " />
+<p>在 JavaEE 平台上，处理 TCP 连接，解析 HTTP 协议这些底层工作统统扔给现成的 Web 服务器去做，我们只需要把自己的应用程序跑在 Web 服务器上。为了实现这一目的，JavaEE 提供了 Servlet API， <strong>我们只需要使用 Servlet API 编写自己的 Servlet 来处理 HTTP 请求</strong> ，Web 服务器实现 Servlet API 接口，实现底层功能。</p>
+<p>我们来实现一个最简单的 Servlet，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// WebServlet 注解表示这是一个 Servlet，并映射到地址 /
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#3c5d5d;font-weight:bold">@WebServlet</span><span style="color:#000;font-weight:bold">(</span>urlPatterns <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;/&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">HelloServlet</span> <span style="color:#000;font-weight:bold">extends</span> HttpServlet <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">protected</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">doGet</span><span style="color:#000;font-weight:bold">(</span>HttpServletRequest req<span style="color:#000;font-weight:bold">,</span> HttpServletResponse resp<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">throws</span> ServletException<span style="color:#000;font-weight:bold">,</span> IOException <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 设置响应类型
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		resp<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setContentType</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;text/html&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 获取输出流
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		PrintWriter ps <span style="color:#000;font-weight:bold">=</span> resp<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getWriter</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 写入响应
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		pw<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;&lt;h1&gt;Hello, Servlet!&lt;/h1&gt;&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 最后不要忘记 flush 强制输出
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		pw<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">flush</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>一个 Servlet 总是继承自 <code>HttpServlet</code> ，然后覆写 <code>doGet()</code> 或 <code>doPost()</code> 方法。</p>
+<p>思考一下：Servlet API 是谁提供？</p>
+<hr>
+<p>普通的 Java 程序是通过启动 JVM，然后执行 <code>main()</code> 方法开始运行。但是 Web 应用程序有所不同，我们无法直接运行 <code>war</code> 文件，必须先启动 Web 服务器，再由 Web 服务器加载我们编写的 <code>HelloServlet</code> ，这样就可以让 <code>HelloServlet</code> 处理浏览器发送的请求。</p>
+<p>如此，一个完整的 Web 应用程序的开发流程如下：</p>
+<pre tabindex="0"><code>1. 编写 Servlet；
+2. 打包为 war 文件；
+3. 复制到 Tomcat 的 webapps 目录下；
+4. 启动 Tomcat。
+</code></pre><p>这很繁琐！！！</p>
+<p>Tomcat 实际上也是一个 Java 程序，我们看看 Tomcat 的启动流程：</p>
+<pre tabindex="0"><code>1. 启动 JVM 并执行 Tomcat 的 main() 方法；
+2. 加载 war 并初始化 Servlet；
+3. 正常服务。
+</code></pre><p>启动 Tomcat 无非就是设置好 classpath 并执行 Tomcat 某个 jar 包的 <code>main()</code> 方法， <strong>我们完全可以把 Tomcat 的 jar 包全部引入进来，然后自己编写一个 <code>main()</code> 方法</strong> ，先启动 Tomcat，然后让它加载我们的 webapp 就行。如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">static</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">main</span><span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">[]</span> args<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">throws</span> Exception <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 启动 Tomcat
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		Tomcat tomcat <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Tomcat<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>		tomcat<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setPort</span><span style="color:#000;font-weight:bold">(</span>Integer<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getInteger</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;port&#34;</span><span style="color:#000;font-weight:bold">,</span> 8080<span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>		tomcat<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getConnector</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 创建 webapp
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		Context ctx <span style="color:#000;font-weight:bold">=</span> tomcat<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addWebapp</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">new</span> File<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;src/main/webapp&#34;</span><span style="color:#000;font-weight:bold">).</span><span style="color:#008080">getAbsolutePath</span><span style="color:#000;font-weight:bold">());</span>
+</span></span><span style="display:flex;"><span>		WebResourceRoot resources <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> StandardRoot<span style="color:#000;font-weight:bold">(</span>ctx<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		resources<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addPreResources</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> DirResourceSet<span style="color:#000;font-weight:bold">(</span>
+</span></span><span style="display:flex;"><span>			resources<span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#d14">&#34;/WEB-INF/classes&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">new</span> File<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;target/classes&#34;</span><span style="color:#000;font-weight:bold">).</span><span style="color:#008080">getAbsolutePath</span><span style="color:#000;font-weight:bold">(),</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#d14">&#34;/&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		ctx<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setResource</span><span style="color:#000;font-weight:bold">(</span>resources<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		tomcat<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">start</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>		tomcat<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getServer</span><span style="color:#000;font-weight:bold">().</span><span style="color:#008080">await</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>如此，我们直接运行 <code>main()</code> 方法，即可启动嵌入式 Tomcat 服务器，然后，通过预设的 <code>tomcat.addWebapp(&quot;&quot;, new File(&quot;src/main/webapp&quot;)</code>，Tomcat 会自动加载当前工程作为根 webapp，可直接在浏览器访问 <code>http://localhost:8080/</code> 。</p>
+<p>思考一下：如何引入 Tomcat 的 jar 包呢？</p>
+<hr>
+<p><strong>一个 Web App 就是由一个或多个 Servlet 组成的，每个 Servlet 通过注解说明自己能处理的路径。</strong> 浏览器发出的 HTTP 请求总是由 Web Server 先接收，然后，根据 Servlet 配置的映射，不同的路径转发到不同的 Servlet 。</p>
+<img src="imgs/3.png" />
+<p><em>_重定向</em> 是指当浏览器请求一个 URL 时，服务器返回一个重定向指令（如 <code>resp.sendRedirect(Your_Redirect_To_Url);</code> ），告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求（浏览器地址会显示新的 <code>Your_Redirect_To_Url</code> ）。</p>
+<p>Forward 是指内部 <em>_转发</em> （地址栏不会变）。当一个 Servlet 处理请求的时候，它可以决定自己不继续处理，而是转发给另一个 Servlet 处理（如 <code>req.getRequestDispatcher(Your_Forward_To_Url).forward(req, resp);</code> ）。</p>
+<hr>
+<p>在 Web 应用程序中，如何跟踪用户身份？</p>
+<p>HTTP 协议是一个无状态协议，即 Web 应用程序无法区分收到的两个 HTTP 请求是否是同一个浏览器发出的。为了跟踪用户状态，服务器可以向浏览器分配一个唯一 ID，并以 Cookie 的形式发送到浏览器，浏览器在后续访问时总是附带此 Cookie，这样，服务器就可以识别用户身份。</p>
+<p>我们把这种基于唯一 ID 识别用户身份的机制称为 <em>_Session</em>，JavaEE 的 Servlet 机制内建了对 Session 的支持。如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>HttpSession session <span style="color:#000;font-weight:bold">=</span> req<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getSession</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 存储信息到 HttpSession
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>session<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setAttribute</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;user&#34;</span><span style="color:#000;font-weight:bold">,</span> name<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 读取信息从 HttpSession
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>String user <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span>String<span style="color:#000;font-weight:bold">)</span> req<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getSession</span><span style="color:#000;font-weight:bold">().</span><span style="color:#008080">getAttribute</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;user&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>服务器识别 Session 的关键就是依靠一个名为 <code>JSESSIONID</code> 的 Cookie。在 Servlet 中第一次调用 <code>req.getSession()</code> 时，Servlet 容器自动创建一个 Session ID，然后通过一个名为 <code>JSESSIONID</code> 的 Cookie 发送给浏览器。</p>
+<p>综上可知，Servlet 提供的 <code>HttpSession</code> 本质上就是通过一个名为 <code>JSESSIONID</code> 的 Cookie 来跟踪用户会话的。下面我们来看看 Cookie 的设置与读取：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 创建一个新的 Cookie
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>Cookie cookie <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Cookie<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;lang&#34;</span><span style="color:#000;font-weight:bold">,</span> lang<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>cookie<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setPath</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/&#34;</span><span style="color:#000;font-weight:bold">);</span>            <span style="color:#998;font-style:italic">// 设置 Cookie 生产的路径范围
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>cookie<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setMaxAge</span><span style="color:#000;font-weight:bold">(</span>8640000<span style="color:#000;font-weight:bold">);</span>      <span style="color:#998;font-style:italic">// 设置 Cookie 有效期
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 将该 Cookie 添加到响应
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>resp<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">addCookie</span><span style="color:#000;font-weight:bold">(</span>cookie<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// ....
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">// 读取请求附带的所有 Cookie
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>Cookie<span style="color:#000;font-weight:bold">[]</span> cookies <span style="color:#000;font-weight:bold">=</span> req<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getCookies</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span>cookies <span style="color:#000;font-weight:bold">!=</span> <span style="color:#000;font-weight:bold">null</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span>Cookie cookie <span style="color:#000;font-weight:bold">:</span> cookies<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span>cookie<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getName</span><span style="color:#000;font-weight:bold">().</span><span style="color:#008080">equals</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;lang&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#998;font-style:italic">// 返回 Cookie 的值
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>			<span style="color:#000;font-weight:bold">return</span> cookie<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getValue</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="jsp">JSP</h2>
+<p>JSP 是 Java Server Pages 的缩写，它的文件必须放到 <code>/src/main/webapp</code> 下，文件名必须以 <code>.jsp</code> 结尾，整个文件与 HTML 并无太大区别，但需要插入变量，或者动态输出的地方，使用特殊指令 <code>&lt;% ... %&gt;</code> 。</p>
+<p>整个 JSP 的内容实际上是一个 HTML，但是稍有不同：</p>
+<ul>
+<li>包含在 <code>&lt;%-- 和 --%&gt;</code> 之间的是 JSP 的注释，它们会被完全忽略；</li>
+<li>包含在 <code>&lt;% 和 %&gt;</code> 之间的是 Java 代码，可以编写任意 Java 代码；</li>
+<li>如果使用 <code>&lt;%= xxx %&gt;</code> 则可以快捷输出一个变量的值。</li>
+</ul>
+<p>JSP 页面内置了几个变量（可以直接使用）：</p>
+<ul>
+<li><code>out</code>：表示 HttpServletResponse 的 <code>PrintWriter</code>；</li>
+<li><code>session</code>：表示当前 HttpSession 对象；</li>
+<li><code>request</code>：表示 HttpServletRequest 对象。</li>
+</ul>
+<p>JSP 和 Servlet 有什么区别？其实它们没有任何区别，因为 JSP 在执行前首先被编译成一个 Servlet。</p>
+<p>访问 JSP 页面时，直接指定完整路径（而无需手动配置映射路径）。例如， <code>http://localhost:8080/hello.jsp</code> 。</p>
+<blockquote>
+<p>= JSP 早已是明日黄花了……</p>
+</blockquote>
+<h2 id="mvc">MVC</h2>
+<p>通过前面的章节可以看到：</p>
+<ul>
+<li>Servlet 适合编写 Java 代码，实现各种复杂的业务逻辑，但不适合输出复杂的 HTML；</li>
+<li>JSP 适合编写 HTML，并在其中插入动态内容，但不适合编写复杂的 Java 代码。</li>
+</ul>
+<p>能否将两者结合起来，发挥各自的优点，避免各自的缺点？ &ndash; <strong>MVC</strong> !!!</p>
+<img src="imgs/4.png" />
+<p>使用 MVC 模式的好处是，Controller 专注于业务处理，它的处理结果就是 Model。 <strong>Model 可以是一个 JavaBean，也可以是一个包含多个对象的 Map</strong> ，Controller 只负责把 Model 传递给 View，View 只负责把 Model 给“渲染”出来，这样，三者职责明确，且开发更简单，因为开发 Controller 时无需关注页面，开发 View 时无需关心如何创建 Model。</p>
+<blockquote>
+<p>= Controller 和 View 的纽带就是 Model 喽（处理完之后转发即可）。🤨 Emm&hellip; 这就是前后端分离的起点？</p>
+</blockquote>
+<p>通过结合 Servlet 和 JSP 的 MVC 模式，我们可以发挥二者各自的优点：</p>
+<ul>
+<li>Servlet 实现业务逻辑；</li>
+<li>JSP 实现展示逻辑。</li>
+</ul>
+<p>但是，直接把 MVC 搭在 Servlet 和 JSP 之上还是不太好，原因如下：</p>
+<ul>
+<li>Servlet 提供的接口仍然偏底层，需要实现 Servlet 调用相关接口；</li>
+<li>JSP 对页面开发不友好，更好的替代品是模板引擎；</li>
+<li>业务逻辑最好由纯粹的 Java 类实现，而不是强迫继承自 Servlet。</li>
+</ul>
+<p>思考一下：能不能通过普通的 Java 类实现 MVC 的 Controller？ &ndash; <strong>当然能</strong> ！</p>
+<p><strong>如何设计一个 MVC 框架呢？</strong></p>
+<img src="imgs/5.png" />
+<p>上图中， <code>DispatcherServlet</code> 以及 <code>render(ModelAndView)</code> （如何渲染）均由 MVC 框架实现，有了 MVC 框架，我们只需要编写 <code>Controller</code> 就可以了。</p>
+<p>具体如何呢？且往下看。</p>
+<p>在 MVC 框架中创建一个 <strong>接收所有请求</strong> 的 Servlet &ndash; <code>DispatcherServlet</code> ，它总是映射到 <code>/</code> ，然后根据不同的 Controller 的方法定义的 <code>@GetMapping</code> 或 <code>@PostMapping</code> 的 Path 决定调用哪个方法，最后获得方法返回的 <code>ModelAndView</code> 后，渲染模板，写入 <code>HttpServletResponse</code> ，即完成了整个 MVC 的处理。</p>
+<p>我们的 <code>DispatcherServlet</code> 持有哪些信息呢？如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@WebServlet</span><span style="color:#000;font-weight:bold">(</span>urlPatterns <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;/&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">DispatcherServlet</span> <span style="color:#000;font-weight:bold">extends</span> HttpServlet <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 持有存储请求路径到某个具体方法的映射
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">private</span> Map<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">,</span> GetDispatcher<span style="color:#000;font-weight:bold">&gt;</span> getMappings <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> HashMap<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> Map<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">,</span> PostDispatcher<span style="color:#000;font-weight:bold">&gt;</span> postMappings <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> HashMap<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 持有模板引擎
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">private</span> ViewEngine viewEngine<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">init</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">throws</span> ServletException <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// DispatcherServlet 初始化时，扫描所有的 Controller 中
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		<span style="color:#998;font-style:italic">// 带有 @GetMappings 和 @PostMappings 标记的方法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		<span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getMappings</span> <span style="color:#000;font-weight:bold">=</span> scanGetInControllers<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">postMappings</span> <span style="color:#000;font-weight:bold">=</span> scanPostInControllers<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">viewEngine</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> ViewEngine<span style="color:#000;font-weight:bold">(</span>getServletContext<span style="color:#000;font-weight:bold">());</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p><strong>思考一下：如何扫描并获取？ &ndash; 反射！</strong></p>
+<p>是的，关于 <code>DispatcherServlet</code> ，其持有信息就是上面这些。</p>
+<p>下面，我们再深入一下，看看其中 <code>GetDispatcher</code> 、 <code>PostDispatcher</code> 、 <code>ViewEngine</code> 都是什么结构。</p>
+<p>处理一个 GET 请求是通过 <code>GetDispatcher</code> 对象完成的，它需要如下信息：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">GetDispatcher</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	Object instance<span style="color:#000;font-weight:bold">;</span>             <span style="color:#998;font-style:italic">// Controller 实例
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	Method method<span style="color:#000;font-weight:bold">;</span>               <span style="color:#998;font-style:italic">// Controller 方法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	String<span style="color:#000;font-weight:bold">[]</span> parameterNames<span style="color:#000;font-weight:bold">;</span>     <span style="color:#998;font-style:italic">// 方法参数名称
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	Class<span style="color:#000;font-weight:bold">&lt;?&gt;[]</span> parameterClasses<span style="color:#000;font-weight:bold">;</span> <span style="color:#998;font-style:italic">// 方法参数类型
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>类似的， <code>PostDispatcher</code> 需要如下信息：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">PostDispatcher</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	Object instance<span style="color:#000;font-weight:bold">;</span>             <span style="color:#998;font-style:italic">// Controller 实例
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	Method method<span style="color:#000;font-weight:bold">;</span>               <span style="color:#998;font-style:italic">// Controller 方法
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	Class<span style="color:#000;font-weight:bold">&lt;?&gt;[]</span> parameterClasses<span style="color:#000;font-weight:bold">;</span> <span style="color:#998;font-style:italic">// 方法参数映射
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	ObjectMapper objectMapper<span style="color:#000;font-weight:bold">;</span>   <span style="color:#998;font-style:italic">// JSON 映射
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p><code>ViewEngine</code> 其实非常简单，只需要实现一个简单的 <code>render()</code> 方法，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ViewEngine</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#458;font-weight:bold">void</span> <span style="color:#900;font-weight:bold">render</span><span style="color:#000;font-weight:bold">(</span>ModelAndView mv<span style="color:#000;font-weight:bold">,</span> Writer writer<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">throws</span> IOException <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		String view <span style="color:#000;font-weight:bold">=</span> mv<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">view</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>		Map<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">,</span> Object<span style="color:#000;font-weight:bold">&gt;</span> model <span style="color:#000;font-weight:bold">=</span> mv<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">model</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 根据 view 找到模板文件
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		Template template <span style="color:#000;font-weight:bold">=</span> getTemplateByPath<span style="color:#000;font-weight:bold">(</span>view<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 渲染并写入 Wrinter
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		template<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">write</span><span style="color:#000;font-weight:bold">(</span>writer<span style="color:#000;font-weight:bold">,</span> model<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>其中 <code>ModelAndView</code> 定义也比较简单，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ModelAndView</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	Map<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">,</span> Object<span style="color:#000;font-weight:bold">&gt;</span> model<span style="color:#000;font-weight:bold">;</span>  <span style="color:#998;font-style:italic">// 一个 JavaBean 或一个包含多个对象的 map
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	String view<span style="color:#000;font-weight:bold">;</span>                <span style="color:#998;font-style:italic">// 模板的路径
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>看，只要有了 MVC 框架，我们只需要编写包含返回 <code>ModelAndView</code> 对象方法的 Controller 类就可以了。</p>
+<p>详细代码参考 - <a href="https://gitee.com/liaoxuefeng/learn-java/blob/master/practices/Java%25E6%2595%2599%25E7%25A8%258B/200.Web%25E5%25BC%2580%25E5%258F%2591.1255945497738400/70.MVC%25E9%25AB%2598%25E7%25BA%25A7%25E5%25BC%2580%25E5%258F%2591.1337408645759009/web-mvc.zip?utm_source=blog_lxf">实现一个 MVC 框架</a> 。</p>
+<p>这个 MVC 框架主要参考就是 Spring MVC，通过实现一个“简化版”MVC，可以掌握 Java Web MVC 开发的核心思想与原理。</p>
+<div class="oh-essay">
+当然，在实际工作中，已经有像 Spring MVC 这种比较成熟的框架了，但是了解原理是重要的，比只会简单的运用要重要的多。
+</div>
+<h2 id="spring-mvc">Spring MVC</h2>
+<p>首先，来看一个标准的 Maven Web 工程目录结构示例，如下：</p>
+<img src="imgs/6.png" />
+<p>其中， <code>src/main/webapp</code> 是标准 web 目录， <code>WEB-INF</code> 存放 <code>web.xml</code> ，编译的 class，第三方 jar，以及不允许浏览器直接访问的 View 模版， <code>static</code> 目录存放所有静态文件。</p>
+<p>在 <code>src/main/resources</code> 目录中存放的是 Java 程序读取的 classpath 资源文件，除了 JDBC 的配置文件 <code>jdbc.properties</code> 外，我们又新增了一个 <code>logback.xml</code> ，这是 Logback 的默认查找的配置文件。</p>
+<p>在 <code>src/main/java</code> 中就是我们编写的 Java 代码了。</p>
+<hr>
+<p>在前面已经讲过了 Java Web 的基础：Servlet 容器，以及标准的 Servlet 组件：</p>
+<ul>
+<li>Servlet：能处理 HTTP 请求并将 HTTP 响应返回；</li>
+<li>JSP：一种嵌套 Java 代码的 HTML，将被编译为 Servlet；</li>
+<li>Filter：能过滤指定的 URL 以实现拦截功能；</li>
+<li>Listener：监听指定的事件，如 ServletContext、HttpSession 的创建和销毁。</li>
+</ul>
+<p>Servlet 容器为每个 Web 应用程序自动创建一个唯一的 <code>ServletContext</code> 实例，这个实例就代表了 Web 应用程序本身。</p>
+<p>我们知道 Spring 提供的是一个 IoC 容器，所有的 Bean ，包括 Controller，都在 Spring IoC 容器中初始化，而 Servlet 容器由 JavaEE 服务器（如 Tomcat）提供，它对 Spring 一无所知。</p>
+<p><strong>Web 应用程序总是由 Servlet 容器创建，那么，Spring 容器应该由谁创建？在什么时候创建？Spring 容器中的 Controller 又是如何通过 Servlet 调用的？</strong></p>
+<p>在 Web 应用中启动 Spring 容器有很多种方法，可以通过 Lister 启动，可以通过 Servlet 启动，可以使用 XML 配置，也可以使用注解配置。这里，我们介绍一种最简单的启动 Spring 容器的方式。</p>
+<p>第一步，在 <code>web.xml</code> 中配置 Spring MVC 提供的 <code>DispatcherServlet</code> ：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">&lt;!DOCTYPE web-app PUBLIC
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">&#34;-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold;font-style:italic">&#34;http://java.sun.com/dtd/web-app_2_3.dtd&#34; &gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000080">&lt;web-app&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;servlet&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;servlet-name&gt;</span>dispatcher<span style="color:#000080">&lt;/servlet-name&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;servlet-class&gt;</span>org.springframework.web.servlet.DispatcherServlet<span style="color:#000080">&lt;/servlet-class&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">&lt;!-- 1.初始化参数 contextClass 指定使用注解配置的 AnnotationConfigWebApplicationContext  --&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;init-param&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000080">&lt;param-name&gt;</span>contextClass<span style="color:#000080">&lt;/param-name&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000080">&lt;param-value&gt;</span>org.springframework.web.context.support.AnnotationConfigWebApplicationContext<span style="color:#000080">&lt;/param-value&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;/init-param&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">&lt;!-- 2.配置文件的位置参数 contextConfigLocation 指向 AppConfig 的完整类名 --&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;init-param&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000080">&lt;param-name&gt;</span>contextConfigLocation<span style="color:#000080">&lt;/param-name&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000080">&lt;param-value&gt;</span>com.itranswarp.learnjava.AppConfig<span style="color:#000080">&lt;/param-value&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;/init-param&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;load-on-startup&gt;</span>0<span style="color:#000080">&lt;/load-on-startup&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;/servlet&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">&lt;!-- 3.把这个 Servlet 映射到 /*，即处理所有 URL --&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;servlet-mapping&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;servlet-name&gt;</span>dispatcher<span style="color:#000080">&lt;/servlet-name&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000080">&lt;url-pattern&gt;</span>/*<span style="color:#000080">&lt;/url-pattern&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000080">&lt;/servlet-mapping&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000080">&lt;/web-app&gt;</span>
+</span></span></code></pre></div><p>上述配置可以看作一个样板配置，有了这个配置，Servlet 容器会首先初始化 Spring MVC 的 <code>DispatcherServlet</code> ，在 <code>DispatcherServlet</code> 启动时，它根据配置 <code>AppConfig</code> 创建一个类型是 <code>WebApplicationContext</code> 的 IoC 容器，完成所有 Bean 的初始化，并将容器绑到 <code>ServletContext</code> 上。</p>
+<p>因为 <code>DispatcherServlet</code> 持有 IoC 容器，能从 IoC 容器中获取所有 <code>@Controller</code> 的 Bean，因此， <code>DispatcherServlet</code> 接收到所有 HTTP 请求后，根据 Controller 方法配置的路径，就可以正确把请求转发到指定方法，并根据返回的 <code>ModelAndView</code> 决定如何渲染页面。</p>
+<hr>
+<p>我们已经知道了如何结合 Servlet 容器和 Spring 容器，那么，如何配置一个可用的 Spring MVC 呢？</p>
+<p>和普通 Spring 配置一样，我们编写正常的 <code>AppConfig</code> 后，只需要加上 <code>@EnableWebMvc</code> 注解，就“激活”了 Spring MVC，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@Configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@ComponentScan</span>
+</span></span><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@EnableWebMvc</span>                   <span style="color:#998;font-style:italic">// 启用 Spring MVC
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#3c5d5d;font-weight:bold">@EnableTransactionManagement</span>
+</span></span><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@PropertySource</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;classpath:/jdbc.properties&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AppConfig</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>当然，还需要创建 <code>DataSource</code> 、 <code>JdbcTemplate</code> 、 <code>PlatformTransactionManager</code> 等 Bean 。</p>
+<p>其中，有一个必须要创建的 Bean 是 <code>ViewResolver</code> ，因为 Spring MVC 允许集成任何模板引擎，使用哪个引擎，就实例化一个对应的 <code>ViewResolver</code> ：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@Bean</span>
+</span></span><span style="display:flex;"><span>ViewResolver <span style="color:#900;font-weight:bold">createViewResolver</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@Autowired</span> ServletContext servletContext<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	PebbleEngine engine <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> PebbleEngine<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">Builder</span><span style="color:#000;font-weight:bold">().</span><span style="color:#008080">autoEscaping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">true</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">cacheActive</span><span style="color:#000;font-weight:bold">(</span>flase<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">loader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> ServletLoader<span style="color:#000;font-weight:bold">(</span>servletContext<span style="color:#000;font-weight:bold">))</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">extension</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000;font-weight:bold">new</span> SpringExtension<span style="color:#000;font-weight:bold">())</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">build</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	PebbleViewResolver viewResolver <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> PebbleViewResolver<span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// viewResolver 通过指定 prefix 和 suffix 来确定如何查找 View
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	viewResolver<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setPrefix</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/WEB-INF/templates/&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	viewResolver<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setSuffix</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	viewResolver<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setPebbleEngine</span><span style="color:#000;font-weight:bold">(</span>engine<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">return</span> viewResolver<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><hr>
+<p>一切完备之后，就可以编写我们自己的 Controller 了，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@Controller</span>                     <span style="color:#998;font-style:italic">// 注意是 @Controller ，不是 @Component
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#3c5d5d;font-weight:bold">@RequestMapping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/user&#34;</span><span style="color:#000;font-weight:bold">)</span>        <span style="color:#998;font-style:italic">// 对 URL 分组（推荐）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">UserController</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@GetMapping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/profile&#34;</span><span style="color:#000;font-weight:bold">)</span>     <span style="color:#998;font-style:italic">// 实际 URL 映射是 /user/profile
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">public</span> ModelAndView <span style="color:#900;font-weight:bold">profile</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>实际方法的 URL 映射总是前缀+路径，这种形式还可以有效避免不小心导致的重复的 URL 映射。</p>
+<p>注意，返回的 <code>ModelAndView</code> 通常包含一个 View 的路径和一个 Map 作为 Model，但也可以没有 Model ，如 <code>return new ModelAndView(&quot;signin.html&quot;)</code> 。返回重定向时既可以写 <code>new ModelAndView(&quot;redirect:/signin&quot;)</code> ，也可以直接返回 String ，如 <code>return &quot;redirect:/signin&quot;</code> 。</p>
+<p>如果在 Controller 方法内部直接操作 <code>HttpServletresponse</code> 发送响应，返回 <code>null</code> 表示无需进一步处理。如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> ModelAndView <span style="color:#900;font-weight:bold">download</span><span style="color:#000;font-weight:bold">(</span>HttpServletResponse response<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#458;font-weight:bold">byte</span><span style="color:#000;font-weight:bold">[]</span> data <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">...;</span>
+</span></span><span style="display:flex;"><span>	response<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">setContentType</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;application/octet-stream&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	OutputStream output <span style="color:#000;font-weight:bold">=</span> response<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getOutputStream</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	output<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">write</span><span style="color:#000;font-weight:bold">(</span>data<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	output<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">flush</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">null</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>详细源码参考 <a href="https://gitee.com/liaoxuefeng/learn-java/blob/master/practices/Java%25E6%2595%2599%25E7%25A8%258B/210.Spring%25E5%25BC%2580%25E5%258F%2591.1266263217140032/40.%25E5%25BC%2580%25E5%258F%2591Web%25E5%25BA%2594%25E7%2594%25A8.1282383877767201/10.%25E4%25BD%25BF%25E7%2594%25A8Spring%2520MVC.1282383921807393/spring-web-mvc.zip?utm_source=blog_lxf">使用 Spring MVC</a> 。</p>
+<h2 id="rest">REST</h2>
+<p>使用 Spring MVC 开发 Web 应用程序的主要工作就是编写 Controller 逻辑。</p>
+<p>在 Web 应用中，除了需要使用 MVC 给用户显示页面外，还有一类 API 接口，我们称之为 REST，通常输入输出都是 JSON，便于第三方调用或者使用页面 JavaScript 与之交互。</p>
+<p>直接在 Controller 中处理 JSON 是可以的，因为 Spring MVC 的 <code>@GetMapping</code> 和 <code>@PostMapping</code> 都支持指定输入和输出的格式。然而 <strong>直接用 Spring 的 Controller 配合一大堆注解写 REST 太麻烦了</strong> ，如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@PostMapping</span><span style="color:#000;font-weight:bold">(</span>value <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;/rest&#34;</span><span style="color:#000;font-weight:bold">,</span>                             <span style="color:#998;font-style:italic">// 路径
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>			consumes <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;application/json;charset=UTF-8&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#998;font-style:italic">// 声明能接收的类型
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>			produces <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;application/json;charset=UTF-8&#34;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#998;font-style:italic">// 声明输出的类型
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#3c5d5d;font-weight:bold">@ResponseBody</span>                                             <span style="color:#998;font-style:italic">// !!!
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">public</span> String <span style="color:#900;font-weight:bold">rest</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@RequestBody</span> User user<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>              <span style="color:#998;font-style:italic">// !!!
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;{\&#34;restSupport\&#34;:true}&#34;</span><span style="color:#000;font-weight:bold">;</span>                      <span style="color:#998;font-style:italic">// 返回 JSON
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>其中， <code>@Responsebody</code> 表示返回的 String 无需额外处理，直接作为输出内容写入 <code>HttpServletresponse</code> ，输入的 JSON 则根据注解 <code>@Requestbody</code> 直接被 Spring 反序列化为 <code>User</code> 这个 JavaBean 。</p>
+<p><em>_太麻烦了，怎么办呢？</em></p>
+<p>Spring 还额外提供了一个 <code>@RestController </code> 注解，使用 <code>@RestController</code> 替代 <code>@Controller</code> 后，每个方法自动变成 API 接口方法。如下：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@RestController</span>
+</span></span><span style="display:flex;"><span><span style="color:#3c5d5d;font-weight:bold">@RequestMapping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/api&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ApiController</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@Autowired</span>
+</span></span><span style="display:flex;"><span>	UserService userService<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@GetMapping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/users&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> List<span style="color:#000;font-weight:bold">&lt;</span>User<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">users</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">return</span> userService<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getUsers</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@GetMapping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/users/{id}&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> User <span style="color:#900;font-weight:bold">user</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@PathVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;id&#34;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#458;font-weight:bold">long</span> id<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">return</span> userService<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getUserById</span><span style="color:#000;font-weight:bold">(</span>id<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@PostMapping</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;/signin&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> Map<span style="color:#000;font-weight:bold">&lt;</span>String<span style="color:#000;font-weight:bold">,</span> Object<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">signin</span><span style="color:#000;font-weight:bold">(</span><span style="color:#3c5d5d;font-weight:bold">@RequestBody</span> SignInRequest signinRequest<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			User user <span style="color:#000;font-weight:bold">=</span> userService<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">signin</span><span style="color:#000;font-weight:bold">(</span>signinRequest<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">email</span><span style="color:#000;font-weight:bold">,</span> signinRequest<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">password</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">return</span> Map<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">of</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;user&#34;</span><span style="color:#000;font-weight:bold">,</span> user<span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">catch</span> <span style="color:#000;font-weight:bold">(</span>Exception e<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#000;font-weight:bold">return</span> Map<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">of</span><span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;error&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;SIGNIN_FAILED&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#d14">&#34;message&#34;</span><span style="color:#000;font-weight:bold">,</span> e<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">getMessage</span><span style="color:#000;font-weight:bold">());</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">static</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">SignInRequest</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">public</span> String email<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">public</span> String password<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>编写 REST 接口只需要定义 <code>@RestController</code> ，然后，每个方法都是一个 API 接口，输入和输出只要能被 Jackson 序列化或反序列化为 JSON 就没有问题。</p>
+<p>另外，还有 <code>@JsonIgnore</code> 和 <code>@JsonProperty(access = Access.WRITE_ONLY)</code> 等有意思的注解，它们有什么作用呢？</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">User</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 避免 User 序列化为 JSON 时，暴露 password 属性， 但是
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#998;font-style:italic">// 这会导致想写入 password 时也找不到了
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#3c5d5d;font-weight:bold">@JsonIgnore</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> String <span style="color:#900;font-weight:bold">getPassword</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">return</span> password<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">// 这种就比较好了，只需写入，禁用读取（如， 注册账号时）
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>	<span style="color:#3c5d5d;font-weight:bold">@JsonProperty</span><span style="color:#000;font-weight:bold">(</span>access <span style="color:#000;font-weight:bold">=</span> Access<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">WRITE_ONLY</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> String <span style="color:#900;font-weight:bold">getPassword</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000;font-weight:bold">return</span> password<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>详细代码参考 <a href="https://gitee.com/liaoxuefeng/learn-java/blob/master/practices/Java%25E6%2595%2599%25E7%25A8%258B/210.Spring%25E5%25BC%2580%25E5%258F%2591.1266263217140032/40.%25E5%25BC%2580%25E5%258F%2591Web%25E5%25BA%2594%25E7%2594%25A8.1282383877767201/20.%25E4%25BD%25BF%25E7%2594%25A8REST.1282384941023266/spring-web-mvc-rest.zip?utm_source=blog_lxf">使用 REST 实现 API</a> 。</p>
+<div class="oh-essay">
+虽然，后续 Spring-boot 为我们的开发带来了革命性的变化，但 Spring、MVC 这些基本的思想，才是根本，前者只是把一些东西自动化了，计算机帮你做了你可以不做的。
+</div>
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://loveminimal.github.io/posts/mvx/">← MVX</a></div>
+    <div><a href="https://loveminimal.github.io/posts/spring/">Spring  →</a></div>
+</div>
+    
+    <div class="container-comment">
+	<script src="https://utteranc.es/client.js"
+        repo="loveminimal/comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+	</script>
+</div>
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        豫ICP备2022002918号-1
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

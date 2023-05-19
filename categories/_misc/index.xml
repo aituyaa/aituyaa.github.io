@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>_Misc on Virgo</title>
+    <link>https://loveminimal.github.io/categories/_misc/</link>
+    <description>Recent content in _Misc on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 28 Mar 2023 09:22:10 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/categories/_misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>前端浅谈</title>
+      <link>https://loveminimal.github.io/posts/web-front-end/</link>
+      <pubDate>Tue, 28 Mar 2023 09:22:10 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/web-front-end/</guid>
+      <description>&lt;p&gt;本文不涉及具体的细节，浅谈一下 Web 前端的 1 2 3 ……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>嗨，PC</title>
+      <link>https://loveminimal.github.io/posts/hi-pc/</link>
+      <pubDate>Fri, 14 Oct 2022 16:11:58 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/hi-pc/</guid>
+      <description>&lt;p&gt;近来，准备组装一台 PC 主机，做个记录 ~&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/83636026&#34;&gt;🖥 2022 年电脑配置推荐完整榜单（通用篇）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/425492516&#34;&gt;🖥 CPU篇：2023年3月台式电脑CPU一文搞定&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;说真的，采购对于‘处女座’来说真心不是一件简单的事情，很容易就会陷入到‘内耗’的境地……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CPU 缓存是什么</title>
+      <link>https://loveminimal.github.io/posts/cpu-cache/</link>
+      <pubDate>Tue, 02 Aug 2022 11:30:24 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/cpu-cache/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610074.html&#34;&gt;https://www.jb51.net/hardware/cpu/610074.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们知道，CPU 性能是主要由 CPU 构架、核心线程数量、主频、缓存等诸多因素共同决定，而“缓存”是很多网友容易忽视的一个地方。那么，CPU 缓存是什么？在电脑 CPU 中，一二三级缓存究竟谁对 CPU 性能影响最重要呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用沙子造的 CPU 凭什么卖的那么贵</title>
+      <link>https://loveminimal.github.io/posts/expensive-cpu/</link>
+      <pubDate>Tue, 02 Aug 2022 10:57:48 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/expensive-cpu/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;https://www.jb51.net/hardware/cpu/610350.html&#34;&gt;https://www.jb51.net/hardware/cpu/610350.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2018 年 4 月 3 日，Intel 在北京举办了第八代酷睿移动处理器全球发布会，正式发布了全新的第八代酷睿移动处理器。很多小伙伴其实对 intel 的芯片很感兴趣，但是一但深入了解，很快就会被扑面而来的晶体管，微架构，纳米，CPI，睿频，超频，缓存等概念搞疯………&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CPU 是如何制造出来的</title>
+      <link>https://loveminimal.github.io/posts/how-to-make-a-cpu/</link>
+      <pubDate>Mon, 01 Aug 2022 17:03:52 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/how-to-make-a-cpu/</guid>
+      <description>&lt;p&gt;好吧，试了，但真的没找到 “佚名” 是谁 😂 ，希望原作者能感受到我的原力感谢吧…… 不少网站都有转载该篇文章，以下是图片较清晰的几个页面链接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sohu.com/a/255397866_468626&#34;&gt;https://www.sohu.com/a/255397866_468626&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jb51.net/hardware/cpu/611229.html&#34;&gt;https://www.jb51.net/hardware/cpu/611229.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jb51.net/hardware/cpu/610350.html&#34;&gt;https://www.jb51.net/hardware/cpu/610350.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;1 寸 = 33.3333 mm&lt;/code&gt;
+&lt;code&gt;集成电路 ic (integrated circuit )&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>https://loveminimal.github.io/posts/work/</link>
+      <pubDate>Tue, 29 Sep 2020 12:10:47 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/work/</guid>
+      <description>&lt;p&gt;开发环境 Jenkins 的 Git Branches 和项目名称对照表及其说明和备忘。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wiki</title>
+      <link>https://loveminimal.github.io/posts/wiki/</link>
+      <pubDate>Tue, 28 Jan 2020 12:26:30 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/wiki/</guid>
+      <description>&lt;img alt=&#34;picture 8&#34; src=&#34;https://loveminimal.github.io/posts/wiki/imgs/1912db1b19fa392956a9d4c48a0c6354b8549ccf469303b891ec1a2a462d8fc2.png&#34; /&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ajax on Virgo</title>
+    <link>https://loveminimal.github.io/tags/ajax/</link>
+    <description>Recent content in Ajax on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 08 Feb 2022 17:18:18 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/ajax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Promise</title>
+      <link>https://loveminimal.github.io/posts/promise/</link>
+      <pubDate>Tue, 08 Feb 2022 17:18:18 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/promise/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;= 这篇 Promise 仅是摘录使用，内容很散碎……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise&#34;&gt;Promise&lt;/a&gt; 是一个对象（可以用来绑定回调函数），它代表了一个异步操作的最终完成或者失败。因为大多数人仅仅是使用已创建的 Promise 实例对象，所以我们首先说明怎样使用 Promise，再说明如何创建 Promise 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>https://loveminimal.github.io/posts/ajax/</link>
+      <pubDate>Thu, 26 Nov 2020 09:58:54 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/ajax/</guid>
+      <description>&lt;p&gt;什么是 Ajax ?&lt;/p&gt;
+&lt;img src=&#34;https://loveminimal.github.io/posts/ajax/imgs/ajax-1.png&#34; width=&#34;600&#34; /&gt;
+&lt;p&gt;AJAX（Asynchronous JavaScript and XML），是一种异步请求数据的 Web 开发技术。它不是新的编程语言，而是一种使用现有标准的新方法。其最大的优点是在不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容。&lt;/p&gt;
+&lt;p&gt;*注：AJAX 不需要任何浏览器插件，但需要用户允许 JavaScript 在浏览器上执行。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

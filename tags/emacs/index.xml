@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on Virgo</title>
+    <link>https://loveminimal.github.io/tags/emacs/</link>
+    <description>Recent content in Emacs on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Apr 2023 11:36:18 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs Lisp</title>
+      <link>https://loveminimal.github.io/posts/elisp/</link>
+      <pubDate>Tue, 18 Apr 2023 11:36:18 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/elisp/</guid>
+      <description>&lt;p&gt;📕 转载自 &lt;a href=&#34;http://smacs.github.io/elisp/&#34;&gt;Emacs Lisp 简明教程 - 水木社区 Emacs 版&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在* &lt;a href=&#34;http://www.newsmth.net/nForum/article/Emacs/58338?s=58338&#34;&gt;此处下载&lt;/a&gt;* 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;emacs 的高手不能不会 elisp。但是对于很多人来说 elisp 学习是一个痛苦的历程，至少我是有这样一段经历。因此，我写了这一系列文章，希望能为后来者提供一点捷径。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSCode 插件 CVE Keymap 的开发记录</title>
+      <link>https://loveminimal.github.io/posts/cve-keymap/</link>
+      <pubDate>Wed, 06 Jul 2022 15:36:10 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/cve-keymap/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;当前博文以 &lt;code class=&#34;verbatim&#34;&gt;Org Mode&lt;/code&gt; 格式编辑。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I have a vim, I have a emacs.&lt;br&gt;
+Eh~ vim-emacs!&lt;br&gt;
+I have a code, I have a vim-emacs.&lt;br&gt;
+Eh~ code-vim-emacs!&lt;br&gt;
+CVE!&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>键位映射那些事儿</title>
+      <link>https://loveminimal.github.io/posts/editor-keybindings/</link>
+      <pubDate>Tue, 05 Jul 2022 17:53:29 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/editor-keybindings/</guid>
+      <description>&lt;p&gt;Vim 的键位不错，无论是移动光标还是进行编辑操作，但是如果是使用中文输入的话，就很尬 &amp;ndash; 中文状态下命令模式不能用，虽然通过一些方式可以使得在切换为非插入模式时自动切换为英文状态，但总是不那么尽如人意。&lt;/p&gt;
+&lt;p&gt;Emacs 的键位模式，就很适应中英文的混合输入，唯一的缺点就是有点费小手指。在 Emacs 中，我一般会启用 Evil 插件，如此，可以实现如果是只读文件和做一些删减工作的时候，就直接使用 Vim 的键位模式，而在插入模式下，就使用 Emacs 的键位模式，很不错，附上一份个人的 Evil 插件的配置 &lt;a href=&#34;https://github.com/loveminimal/emacs.d/blob/master/lisp/init-evil.el&#34;&gt;init-evil.el&lt;/a&gt; 。唯一不足的是，这种方式只有在 Emacs 中才是可用的，如果你使用其他编辑器时，就没有这份待遇了。不过，单纯的 Emacs 键位也足够好用了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Org Mode</title>
+      <link>https://loveminimal.github.io/posts/org-mode/</link>
+      <pubDate>Wed, 29 Jun 2022 10:02:15 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/org-mode/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;这里是 Hugo 解析 Org Mode 内容的展示，如果你使用的是 Markdown ，可以跳转 &lt;a href=&#34;https://loveminimal.github.io/posts/markdown&#34;&gt;Markdown&lt;/a&gt; 查看相关样式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+*想要了解更多，可以去阅读 &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;oxhugo&lt;/a&gt; 的文档 。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

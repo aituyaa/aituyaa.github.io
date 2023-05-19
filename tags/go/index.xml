@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Virgo</title>
+    <link>https://loveminimal.github.io/tags/go/</link>
+    <description>Recent content in Go on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Jun 2022 18:02:51 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>https://loveminimal.github.io/posts/go/</link>
+      <pubDate>Wed, 08 Jun 2022 18:02:51 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/go/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Go 之 1、2、3、4、5…… 不得不说，Golang 的语法真的挺怪异的 😢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://loveminimal.github.io/posts/go/imgs/2.webp&#34; width=&#34;320&#34; /&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

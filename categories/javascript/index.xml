@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Virgo</title>
+    <link>https://loveminimal.github.io/categories/javascript/</link>
+    <description>Recent content in JavaScript on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 23 Sep 2022 09:15:42 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canvas</title>
+      <link>https://loveminimal.github.io/posts/canvas/</link>
+      <pubDate>Fri, 23 Sep 2022 09:15:42 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/canvas/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;gt; 近来要开发一个手写板程序，顺便来系统回顾一下 Canvas 这个东东……&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;🔔 本篇摘录自 &lt;a href=&#34;https://www.runoob.com/w3cnote/html5-canvas-intro.html&#34;&gt;《学习 HTML5 Canvas 这一篇文章就够了》&lt;/a&gt; ，写的真不错。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; 是 HTML5 新增的一个可以使用脚本（通常为 JavaScript）在其中绘制图像的 HTML 元素。&lt;/p&gt;
+&lt;img alt=&#34;picture 1&#34; src=&#34;https://loveminimal.github.io/posts/canvas/imgs/1232422ad2c81ef221b8d3cf3938b9cc48fda66fdd7418d5c400728d82a2c162.png&#34; width=&#34;500&#34; /&gt;  
+&lt;p&gt;&lt;code&gt;&amp;gt; 上图就是使用 canvas 绘制出来的&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Canvas 是由 HTML 代码配合高度和宽度属性而定义出的可绘制区域。JavaScript 代码可以访问该区域，类似于其他通用的二维 API，通过一套完整的绘图函数来动态生成图形。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://loveminimal.github.io/posts/react/</link>
+      <pubDate>Mon, 19 Sep 2022 17:30:59 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/react/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;%5Bhttps://%5D(https://react.docschina.org/docs/getting-started.html)&#34;&gt;📔 官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;具体安装及引入细节，请直接参考官方文档。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;React 是一个用于构建用户界面的 JavaScript 库，你可以用它给简单的 HTML 页面增加一点交互，也可以开始一个完全由 React 驱动的复杂应用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 对的，它只是一个 UI 库而已 ！！！&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>防抖与节流</title>
+      <link>https://loveminimal.github.io/posts/debounce-and-throttle/</link>
+      <pubDate>Thu, 21 Jul 2022 14:13:29 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/debounce-and-throttle/</guid>
+      <description>&lt;p&gt;为什么需要防抖和节流？它们是什么？有什么区别？适用场景是什么？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Promise</title>
+      <link>https://loveminimal.github.io/posts/promise/</link>
+      <pubDate>Tue, 08 Feb 2022 17:18:18 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/promise/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;= 这篇 Promise 仅是摘录使用，内容很散碎……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise&#34;&gt;Promise&lt;/a&gt; 是一个对象（可以用来绑定回调函数），它代表了一个异步操作的最终完成或者失败。因为大多数人仅仅是使用已创建的 Promise 实例对象，所以我们首先说明怎样使用 Promise，再说明如何创建 Promise 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MVX</title>
+      <link>https://loveminimal.github.io/posts/mvx/</link>
+      <pubDate>Mon, 07 Feb 2022 17:05:10 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/mvx/</guid>
+      <description>&lt;p&gt;MVVM ? MVC ? MVP ?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>浏览器</title>
+      <link>https://loveminimal.github.io/posts/browser/</link>
+      <pubDate>Wed, 21 Jul 2021 15:28:58 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/browser/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;了解浏览器，它已经成为主流的信息传递方式，并将持续壮大！&lt;br&gt;
+了解它的内核、构成及动作方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://loveminimal.github.io/posts/browser/imgs/tim.jpg&#34; width=&#34;300&#34; alt=&#34;蒂姆·伯纳斯·李&#34; /&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 蒂姆·伯纳斯·李 （1955.06.08 - ）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2017 年，他因 “发明万维网、第一个浏览器和使万维网得以扩展的基本协议和算法” 而获得 2016 年度的图灵奖。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scroll Bar</title>
+      <link>https://loveminimal.github.io/posts/scroll-bar/</link>
+      <pubDate>Tue, 09 Mar 2021 11:06:13 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/scroll-bar/</guid>
+      <description>&lt;p&gt;🔔 参考 &lt;a href=&#34;https://www.cnblogs.com/wjw1014/p/13564175.html&#34;&gt;https://www.cnblogs.com/wjw1014/p/13564175.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>模块化编程</title>
+      <link>https://loveminimal.github.io/posts/modular-programming/</link>
+      <pubDate>Fri, 11 Dec 2020 10:52:19 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/modular-programming/</guid>
+      <description>&lt;p&gt;i.e. Modular Programming&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每一个领域的内容，都要有先问一下 &amp;ndash; 是什么？为什么？做什么？怎么做？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;是什么？简述概念；&lt;/li&gt;
+&lt;li&gt;为什么？历史发展，出现的原因，优缺点；&lt;/li&gt;
+&lt;li&gt;做什么？主要应用场景；&lt;/li&gt;
+&lt;li&gt;怎么做？具体使用方法步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Virtual Dom</title>
+      <link>https://loveminimal.github.io/posts/virtual-dom/</link>
+      <pubDate>Wed, 02 Dec 2020 10:33:28 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/virtual-dom/</guid>
+      <description>&lt;p&gt;Before learning Virtual DOM, lets take a look at DOM.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>https://loveminimal.github.io/posts/ajax/</link>
+      <pubDate>Thu, 26 Nov 2020 09:58:54 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/ajax/</guid>
+      <description>&lt;p&gt;什么是 Ajax ?&lt;/p&gt;
+&lt;img src=&#34;https://loveminimal.github.io/posts/ajax/imgs/ajax-1.png&#34; width=&#34;600&#34; /&gt;
+&lt;p&gt;AJAX（Asynchronous JavaScript and XML），是一种异步请求数据的 Web 开发技术。它不是新的编程语言，而是一种使用现有标准的新方法。其最大的优点是在不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容。&lt;/p&gt;
+&lt;p&gt;*注：AJAX 不需要任何浏览器插件，但需要用户允许 JavaScript 在浏览器上执行。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>File Conversion</title>
+      <link>https://loveminimal.github.io/posts/file-conversion/</link>
+      <pubDate>Thu, 26 Nov 2020 09:40:28 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/file-conversion/</guid>
+      <description>&lt;p&gt;JavaScript 中的 file、blob 和 base64 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Drag and Drop</title>
+      <link>https://loveminimal.github.io/posts/drag-and-drop/</link>
+      <pubDate>Tue, 10 Nov 2020 09:33:57 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/drag-and-drop/</guid>
+      <description>&lt;p&gt;&lt;em&gt;拖放&lt;/em&gt; 是一种常见的特性，即抓取对象以后拖到另一个位置。在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;*注：Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持拖动。&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>跨域</title>
+      <link>https://loveminimal.github.io/posts/cross-domain/</link>
+      <pubDate>Tue, 03 Nov 2020 09:15:07 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/cross-domain/</guid>
+      <description>&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html&#34;&gt;浏览器同源政策及其规避方法&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS 中的动效</title>
+      <link>https://loveminimal.github.io/posts/css-tta/</link>
+      <pubDate>Mon, 19 Oct 2020 10:47:01 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/css-tta/</guid>
+      <description>&lt;p&gt;CSS 中的 &lt;code&gt;transform、transition&lt;/code&gt; 和 &lt;code&gt;animation&lt;/code&gt; ，简称 TTA。&lt;/p&gt;
+&lt;div class=&#34;oh-essay&#34;&gt;
+CSS 什么的这种逻辑性略弱、规则性很强的领域，边用边深入就好，不常用的记了也会忘。
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

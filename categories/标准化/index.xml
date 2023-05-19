@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标准化 on Virgo</title>
+    <link>https://loveminimal.github.io/categories/%E6%A0%87%E5%87%86%E5%8C%96/</link>
+    <description>Recent content in 标准化 on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 02 Nov 2022 15:42:33 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/categories/%E6%A0%87%E5%87%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何维护更新日志</title>
+      <link>https://loveminimal.github.io/posts/keep-changelog/</link>
+      <pubDate>Wed, 02 Nov 2022 15:42:33 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/keep-changelog/</guid>
+      <description>&lt;img alt=&#34;picture 14&#34; src=&#34;https://loveminimal.github.io/posts/keep-changelog/imgs/de78a20f0efae9c4f2c0432200dfe721f1007dc1c9af179b9c33d842f20d1e7b.png&#34; width=&#34;300&#34; /&gt;  
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;https://keepachangelog.com/zh-CN/1.0.0/&#34;&gt;如何维护更新日志 &amp;ndash; 更新日志绝对不应该是 git 日志的堆砌物&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>语义化版本</title>
+      <link>https://loveminimal.github.io/posts/semantic-versioning/</link>
+      <pubDate>Wed, 02 Nov 2022 14:25:16 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/semantic-versioning/</guid>
+      <description>&lt;img alt=&#34;picture 10&#34; src=&#34;https://loveminimal.github.io/posts/semantic-versioning/imgs/f9ff34a8e93cc860f20282e5587cafd221ef73f0d25b926452bec4b7d1dfcb96.png&#34; width=&#34;300&#34; /&gt;  
+&lt;p&gt;i.e.Semantic Versioning&lt;/p&gt;
+&lt;p&gt;🔔 本文摘录自 &lt;a href=&#34;https://semver.org/lang/zh-CN/&#34;&gt;语义化版本 2.0.0 | Semantic Versioning - semver.org&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;= Emm&amp;hellip; 直接借用文章中的一段话 &amp;ndash; 为供他人使用的软件编写适当的文档，是你作为一名专业开发者应尽的职责。*&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>中文技术文档</title>
+      <link>https://loveminimal.github.io/posts/zh-tech-doc/</link>
+      <pubDate>Mon, 19 Jul 2021 15:18:02 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/zh-tech-doc/</guid>
+      <description>&lt;p&gt;🔔 参考 &lt;a href=&#34;https://www.ruanyifeng.com/blog/2016/10/document_style_guide.html&#34;&gt;中文技术文档的写作规范&lt;/a&gt; ，及个人写作习惯。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打造 SDK</title>
+      <link>https://loveminimal.github.io/posts/sdk/</link>
+      <pubDate>Tue, 01 Dec 2020 15:09:04 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/posts/sdk/</guid>
+      <description>&lt;p&gt;🔔 转载自 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/272614462&#34;&gt;如何打造一款标准的 JS-SDK&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&#34;https://loveminimal.github.io/posts/sdk/imgs/sdk-1.jpg&#34; width=&#34;400&#34; style=&#34;float: right; margin-left: 16px;&#34; /&gt;
+&lt;p&gt;SDK（Software Development Kit，软件开发工具包），一般都是一些软件工程师为特定的软件包、软件框架、硬件平台、操作系统等建立应用软件的开发工具的集合。简单讲， &lt;strong&gt;面向开发者，针对特定领域的软件包&lt;/strong&gt; ，基于它，开发人员可以快速构建自己的应用 App 。&lt;/p&gt;
+&lt;p&gt;*&lt;strong&gt;注：比较规范的 SDK 一般都会包含若干的 API 、开发工具集和说明文档。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

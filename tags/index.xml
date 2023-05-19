@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Virgo</title>
+    <link>https://loveminimal.github.io/tags/</link>
+    <description>Recent content in Tags on Virgo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Apr 2023 11:36:18 +0800</lastBuildDate><atom:link href="https://loveminimal.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs</title>
+      <link>https://loveminimal.github.io/tags/emacs/</link>
+      <pubDate>Tue, 18 Apr 2023 11:36:18 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://loveminimal.github.io/tags/javascript/</link>
+      <pubDate>Mon, 25 Jul 2022 14:03:39 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://loveminimal.github.io/tags/nginx/</link>
+      <pubDate>Sat, 16 Jul 2022 18:34:43 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://loveminimal.github.io/tags/vim/</link>
+      <pubDate>Wed, 06 Jul 2022 15:36:10 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://loveminimal.github.io/tags/spring/</link>
+      <pubDate>Tue, 05 Jul 2022 10:00:17 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://loveminimal.github.io/tags/hugo/</link>
+      <pubDate>Sat, 02 Jul 2022 16:49:28 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://loveminimal.github.io/tags/search/</link>
+      <pubDate>Thu, 23 Jun 2022 15:43:26 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://loveminimal.github.io/tags/go/</link>
+      <pubDate>Wed, 08 Jun 2022 18:02:51 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>https://loveminimal.github.io/tags/ajax/</link>
+      <pubDate>Tue, 08 Feb 2022 17:18:18 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/ajax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编译</title>
+      <link>https://loveminimal.github.io/tags/%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Wed, 13 May 2020 13:54:02 +0800</pubDate>
+      
+      <guid>https://loveminimal.github.io/tags/%E7%BC%96%E8%AF%91/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
